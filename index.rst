@@ -10,13 +10,12 @@ Welcome to LIMO Usermanual's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
 .. toctree::
     :maxdepth: 0
     :caption: LIMO Usermanual
     :numbered:
 
-    source/Limo user manual.md
+    source/Know your LIMO.md
 
 
 Indices and tables

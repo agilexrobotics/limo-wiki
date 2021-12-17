@@ -1,6 +1,4 @@
-[TOC]
-
-# LIMO 产品用户使用和开发手册
+LIMO 产品用户使用和开发手册
 
 中文 | EN
 
@@ -196,7 +194,7 @@ Nvidia Jetson Nano 是一款功能强大的小型计算机，专为支持入门�
 
 ### 1.5 部件名称
 
-![img](LIMO_image/车体1-带编号.svg)
+![img](LIMO_image/车体1-带编号.png)
 
 ①　WIFI/蓝牙天线；
 
@@ -218,7 +216,7 @@ Nvidia Jetson Nano 是一款功能强大的小型计算机，专为支持入门�
 
 ⑩　左海鸥门；
 
-![img](LIMO_image/车体2-带编号.svg)
+![img](LIMO_image/车体2-带编号.png)
 
 ⑪　后显示器；
 
@@ -230,11 +228,11 @@ Nvidia Jetson Nano 是一款功能强大的小型计算机，专为支持入门�
 
 ⑮　右扬声器；
 
-![img](LIMO_image/展开1-编号.svg)
+[img](LIMO_image/展开1-编号.png)
 
 ⑯　USB-HUB模块；
 
-![img](LIMO_image/展开2-编号.svg)
+[img](LIMO_image/展开2-编号.png)
 
 ⑰　语音模块；
 
@@ -246,31 +244,31 @@ Nvidia Jetson Nano 是一款功能强大的小型计算机，专为支持入门�
 
 （1）使用四个轮毂电机，节省车体内部空间，可在一个车体上实现阿克曼、四轮差速、履带和麦轮这四种模态的快速切换；
 
-<img src="LIMO_image/四轮毂电机.svg" style="zoom:60%;" />
+[img](LIMO_image/四轮毂电机.png)
 
 ①阿克曼模式：
 
 一种为了解决交通工具转弯时，内外转向轮路径指向的圆心不同的几何学，依据阿克曼转向几何设计的车辆，沿着弯道转弯时，利用四连杆的相等曲柄使内侧轮的转向角比外侧轮大大约2~4度，使四个轮子路径的圆心大致上交会于后轴的延长线上瞬时转向中心，让车辆可以顺畅的转弯。
 
-<img src="LIMO_image/阿克曼模式.svg" style="zoom:60%;" /> 
+[img](LIMO_image/阿克曼模式.png)
 
 ②四轮差速模式：
 
 四轮驱动，可实现原地自转，但对轮胎磨损严重，请勿长时间原地自转；
 
-<img src="LIMO_image/四轮差速模式.svg" style="zoom:60%;" /> 
+[img](LIMO_image/四轮差速模式.png)
 
 ③履带模式：
 
 具有良好的越野性能，可上40°坡和小台阶；
 
- <img src="LIMO_image/履带模式.svg" style="zoom:60%;" />
+[img](LIMO_image/履带模式.png)
 
 ④麦克纳姆轮模式：
 
 基于麦克纳姆轮技术的全方位运动设备可以实现前行、横移、斜行、旋转及其组合等运动方式。
 
-<img src="LIMO_image/麦轮模式.svg" style="zoom:60%;" />
+[img](LIMO_image/麦轮模式.png)
 
 （2）车灯状态指示：
 
@@ -288,31 +286,33 @@ Nvidia Jetson Nano 是一款功能强大的小型计算机，专为支持入门�
 
 （3）两侧车门可展开，预留一个TYPE-C口和两个USB2.0口，方便调试；
 
-<img src="LIMO_image/USB-HUB.svg" style="zoom:60%;" />
+
+
+[img](LIMO_image/USB-HUB.png)
 
 （4）电池可拆换；
 
-<img src="LIMO_image/换电池.svg" style="zoom:60%;" /> 
+[img](LIMO_image/换电池.png)
 
 （5）预留丰富的拓展孔位：
 
 车顶预留8个M3螺丝孔位，以及两条3.2mm宽的槽口；
 
-<img src="LIMO_image/安装孔尺寸-顶视1.svg"   width="800"  height = "600" />
+[img](LIMO_image/安装孔尺寸-顶视1.png)
 
 两车门预留4个M3螺丝孔位，水平展开获得更大安装平台；
 
-<img src="LIMO_image/安装孔尺寸-顶视2.svg" width="800"  height = "600"  />
+[img](LIMO_image/安装孔尺寸-顶视2.png.png)
 
 车底前后各预留四个M3螺丝孔位；
 
-<img src="LIMO_image/安装孔尺寸-底视.svg" width="800"  height = "600" /> 
+[img](LIMO_image/安装孔尺寸-底视.png)
 
 （6）丰富的交互体验：
 
 摄像头、激光雷达、语音模块、双扬声器配合前显示器可提供丰富的交互体验。
 
-<img src="LIMO_image/车体-前显示器.svg" style="zoom:60%;" />
+[img](LIMO_image/车体-前显示器.png)
 
 ### 1.7 模态切换方法
 
@@ -320,33 +320,39 @@ Nvidia Jetson Nano 是一款功能强大的小型计算机，专为支持入门�
 
 先将两侧插销拔起，顺时针转30度，使两插销上较长的线指向车体正前方 ![](LIMO_image/插销1.png)，即可卡住，车灯变为绿色且常亮时，则切换成功；
 
-<img src="LIMO_image/阿克曼-切换1.svg" style="zoom:60%;" />
+[img](LIMO_image/阿克曼-切换1.png)
 
-<img src="LIMO_image/阿克曼-切换2.svg" style="zoom:60%;" />
+[img](LIMO_image/阿克曼-切换2.png)
 
 （2）切换四轮差速模式：
 
   拔起来顺时针转30度，使两插销上较短的线指向车体正前方![](LIMO_image/插销2.png)，此时为插入状态，微调轮胎角度对准孔位让插销插入，车灯变为黄色且常亮时，则切换成功；
 
-<img src="LIMO_image/四轮差速-切换1.svg" style="zoom:60%;" /> 
+[img](LIMO_image/安装孔尺寸-顶视2.png.png)
 
-<img src="LIMO_image/四轮差速-切换2.svg" style="zoom:60%;" />
+[img](LIMO_image/安装孔尺寸-顶视2.png.png)
 
 （3）切换履带模式：
 
 在四轮差速模式下将履带直接套上，建议先套空间较小的后轮，并且履带模式下请将两侧车门抬起防止剐蹭；
 
-<img src="LIMO_image/履带-切换.svg" style="zoom:60%;" /> 
+[img](LIMO_image/履带-切换.png)
 
 （4）切换麦轮模式：
 
 先将轮毂盖和轮胎拆下，只保留轮毂电机，然后保证每个麦轮的小滚子朝向车体中心，用包装里的M3*5螺丝将麦轮安装上，最后需要用遥控/APP调整至麦轮模式。
 
-<img src="LIMO_image/麦轮-切换1.svg" style="zoom:60%;" /> 
+[img](LIMO_image/麦轮-切换1.png)
 
-<img src="LIMO_image/麦轮-切换2.svg" style="zoom:60%;" />
+[img](LIMO_image/麦轮-切换2.png)
 
-<img src="LIMO_image/麦轮角度示意图.svg" style="zoom:60%;" /> 
+[img](LIMO_image/麦轮角度示意图.png)
+
+<img src="LIMO_image/麦轮-切换1.png" style="zoom:60%;" /> 
+
+<img src="LIMO_image/麦轮-切换2.png" style="zoom:60%;" />
+
+<img src="LIMO_image/麦轮角度示意图.png" style="zoom:60%;" /> 
 
 **注：切换至麦轮模式的时候，请确保每个麦轮安装的角度如上图所示**
 
@@ -354,11 +360,15 @@ Nvidia Jetson Nano 是一款功能强大的小型计算机，专为支持入门�
 
 （1）长按开关键开机（短按暂停程序），观察电量表，最后一颗红灯量时请及时充电或更换电池；
 
-<img src="LIMO_image/开机准备.svg" style="zoom:60%;" />
+[img](LIMO_image/安装孔尺寸-顶视2.png.png)
+
+<img src="LIMO_image/开机准备.png" style="zoom:60%;" />
 
 （2）观察前面插销状态以及车灯颜色判断当前模式：
 
-<img src="LIMO_image/模态判断.svg" style="zoom:60%;" />
+[img](LIMO_image/模态判断.png)
+
+<img src="LIMO_image/模态判断.png" style="zoom:60%;" />
 
 | 颜色     | 状态              |
 | -------- | ----------------- |
@@ -372,29 +382,29 @@ Nvidia Jetson Nano 是一款功能强大的小型计算机，专为支持入门�
 
 遥控准备：右滑开机键开机，将SWB通道拨到中间即可遥控控制，下方为指令控制，上方关闭控制；
 
-<img src="LIMO_image/遥控器-01.svg"  width="800"  height = "800" /> 
+[img](LIMO_image/遥控器-01.png)
+
+<img src="LIMO_image/遥控器-01.png"  width="800"  height = "800" /> 
 
  
 
 差速模式：将SWD通道拨到中下档位为四轮差速模式，左摇杆控制前进后退，右摇杆控制原地左右转；
 
-<img src="LIMO_image/遥控器-02.svg"  width="800"  height = "800" /> 
+[img](LIMO_image/遥控器-02.png)
 
  
 
 履带模式：与四轮差速模式的运动模型一样；
 
-<img src="LIMO_image/遥控器-03.svg"  width="800"  height = "800" /> 
-
- 
+[img](LIMO_image/遥控器-03.png)
 
 麦轮模式：SWD通道在上档位时为麦克纳姆轮模式，左摇杆控制运动方向，右摇杆控制左右原地转；
 
-<img src="LIMO_image/遥控器-04.svg"  width="800"  height = "800" /> 
+[img](LIMO_image遥控器-04.png)
 
 阿克曼模式：在车体上切换为阿克曼模式，开启遥控器控制即可，左摇杆控制前进后退，右摇杆控制左右方向；
 
-<img src="LIMO_image/遥控器-05.svg"  width="800"  height = "800" /> 
+[img](LIMO_image/遥控器-05.png)
 
 （4）APP遥控说明
 
@@ -462,7 +472,7 @@ Bluetooth management：点击random 生成任意以LIMO_xxxx的命名的名字�
 
 打开limo右侧的海鸥门，找到USB-HUB模块，给limo连接上键盘鼠标，USB-HUB模块的位置如下图：
 
-<img src="LIMO_image/USB-HUB.svg" style="zoom:70%;" />
+<img src="LIMO_image/USB-HUB.png" style="zoom:70%;" />
 
 键盘鼠标成功连接之后通过以下操作连接wifi，选择需要连接的wifi。
 
@@ -1521,11 +1531,11 @@ rosrun voice voice_ctr_node.py
 
 ### 附录1、三视图
 
-<img src="LIMO_image/三视图尺寸-正视.svg" style="zoom:60%;" />
+<img src="LIMO_image/三视图尺寸-正视.png" style="zoom:60%;" />
 
-<img src="LIMO_image/三视图尺寸-左视.svg" style="zoom:60%;" />
+<img src="LIMO_image/三视图尺寸-左视.png" style="zoom:60%;" />
 
-<img src="LIMO_image/三视图尺寸-俯视.svg" style="zoom:60%;" />
+<img src="LIMO_image/三视图尺寸-俯视.png" style="zoom:60%;" />
 
 
 

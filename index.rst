@@ -13,7 +13,7 @@ Welcome to LIMO Usermanual's documentation!
 
 .. toctree::
     :maxdepth: 0
-    :caption: Livox
+    :caption: LIMO Usermanual
     :numbered:
 
     source/Limo user manual.md
